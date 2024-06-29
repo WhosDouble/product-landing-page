@@ -11,7 +11,7 @@
     <li>Product Listings: View a variety of products with detailed descriptions and images.</li>
     <li>custom scrollbar and interactive elements</li>
 </ul>
-<img src="assets/read.mdstuff/SS1.png/bottle8.png">
+<img src="assets/read.mdstuff/SS1.png/SS1.png">
 
 <h2>Stuff used🛠</h2>
 <ul>
@@ -21,8 +21,8 @@
 </ul>
 <h3>new stuff added</h3>
 <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>updated the first section of the landing page</li>
+    <li>added scroll animations</li>
+    <li>added img slider</li>
+    <li>changed the layout</li>
 </ul>

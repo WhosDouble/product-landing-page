@@ -6,7 +6,10 @@
     <meta name="author" content="Developed by SirRango" />
     <title>Exree</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="animations.css">
     <link rel="icon" href="assets/imgs/logo2.png" />
+    <script defer src="script.js"></script>
+    <script defer src="scroll.js"></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -17,6 +20,8 @@
     <section class="sale-bar-container">
       <a href="">
         <div class="sale-bar">
+          <h3>Click here to see our Summer Sale!</h3>
+          <h3>Click here to see our Summer Sale!</h3>
           <h3>Click here to see our Summer Sale!</h3>
         </div>
       </a>
@@ -46,20 +51,24 @@
             <h2 class="head-word">Men's Cologne</h2>
             <button class="shop-button">SHOP NOW</button>
           </div>
-          <div class="display-content"></div>
+          <div class="display-content">
           <img
+            class="changeimg"
             id="heading-img"
             loading="lazy"
             src="assets/imgs/bottle1.png"
             alt="Fragrance bottles"
           />
+          <img class="changeimg" src="assets/imgs/bottle2.png" alt="" />
+          <img class="changeimg"  src="assets/imgs/bottle4.png" alt="" />
+          <img class="changeimg"  src="assets/imgs/bottle5.png" alt="" />
         </div>
       </section>
 
       <section class="display-container2">
         <header class="display2-header">
-          <h3>Elevate Your Essence</h3>
-          <p>
+          <h3 class="hidden">Elevate Your Essence</h3>
+          <p class="hidden">
             Explore our curated collection of unique fragrances to find the one
             that perfectly embodies your personality and style.
           </p>
@@ -69,11 +78,11 @@
           <div class="bottle-box">
             <div>
               <img class="bottles" src="assets/imgs/bottle1.png" alt="" />
-              <button class="cart-add">BUY NOW</button>
+              <button class="cart-add">Check it out</button>
             </div>
             <div>
               <img class="bottles" src="assets/imgs/bottle2.png" alt="" />
-              <button class="cart-add">BUY NOW</button>
+              <button class="cart-add">Check it out</button>
             </div>
             <div>
               <img
@@ -82,7 +91,7 @@
                 src="assets/imgs/bottle3.png"
                 alt=""
               />
-              <button class="cart-add">BUY NOW</button>
+              <button class="cart-add">Check it out</button>
             </div>
           </div>
         </div>
@@ -108,7 +117,7 @@
       </section>
       <section class="display-section4">
         <div class="service-bar">
-          <div class="shipping">
+          <div class="hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               display="block"
@@ -128,7 +137,7 @@
             <p>on all orders over 75$</p>
             <p>for all international orders over 200$</p>
           </div>
-          <div class="money-back">
+          <div class="hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="44"
@@ -146,7 +155,7 @@
             <p>if you don't like it in 30 days money back</p>
             <p>we honour our iron-clad guarantee</p>
           </div>
-          <div class="sample">
+          <div class="hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="44"
@@ -164,7 +173,7 @@
             <p>Choose a free Travel Size Fragrance</p>
             <p>With every bottle purchased(200$)</p>
           </div>
-          <div class="payment"></div>
+          <div class="hidden"></div>
         </div>
       </section>
       <section class="display-section5">
@@ -184,15 +193,6 @@
           </div>
           <div>
             <img class="bottles" src="assets/imgs/bottle2.png" alt="" />
-            <button class="cart-add">BUY NOW</button>
-          </div>
-          <div>
-            <img
-              id="bottle3"
-              class="bottles"
-              src="assets/imgs/bottle3.png"
-              alt=""
-            />
             <button class="cart-add">BUY NOW</button>
           </div>
           <div>
