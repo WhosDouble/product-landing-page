@@ -4,6 +4,9 @@
   --display-color1: #1a1a1b;
   --display-color2: #333f44;
   --display-color3: #37aa9c;
+  --gradient-color1: #333f44;
+  --gradient-color2: #191e20;
+  --sub-text-color: #a1a1a1;
   --text-color1: #eeeeee;
 }
 /*all selectors*/
@@ -28,6 +31,12 @@ html {
 button {
   color: var(--text-color1);
 }
+p {
+  color: var(--sub-text-color);
+}
+b {
+  color: #eeeeee;
+}
 
 /*custom scrollbar*/
 ::-webkit-scrollbar {
@@ -48,7 +57,11 @@ button {
   z-index: 10;
   width: 100%;
   height: 35px;
-  background: var(--display-color3);
+  background: linear-gradient(
+    45deg,
+    var(--display-color3),
+    var(--display-color2)
+  );
   padding-top: 5px;
   text-align: center;
   color: var(--text-color1);
@@ -58,8 +71,8 @@ button {
 .logo {
   cursor: pointer;
   transition: 0.3s;
-  margin-left: 20%;
-  margin-right: 10%;
+  margin-left: 209px;
+  margin-right: 90px;
 }
 .logo:hover {
   transform: scale(105%);
@@ -71,11 +84,11 @@ button {
   display: flex;
   width: 100%;
   height: 13%;
-  margin: 13px;
+  margin: 20px;
   margin-left: 0;
   background: var(--display-color1);
   padding: 10px;
-  gap: 37px;
+  gap: 90px;
   justify-content: flex-start;
   align-items: center;
 }
@@ -97,6 +110,13 @@ button {
     var(--display-color1),
     var(--display-color2)
   );
+}
+#heading-img {
+  margin: auto;
+  margin-top: 70px;
+  margin-left: 130px;
+  padding-top: 90px;
+  width: 630px;
 }
 .display-heading {
   color: #000;
@@ -152,28 +172,31 @@ button {
   padding: 10px;
 }
 .bottle-box {
+  display: flex;
+  justify-content: center;
+}
+.bottles {
+  display: flex;
   width: 100%;
-  height: 350px;
-  max-width: 400px;
-  background: var(--display-color2);
-  border-radius: 15px;
+  min-width: 300px;
+  max-width: 300px;
+  transition: 0.4s;
+}
+#bottle3 {
+  width: 500px;
+}
+.bottles:hover {
+  transform: scale(107%);
   transition: 0.4s;
 }
 .cart-add {
-  position: relative;
-  top: 300px;
+  width: 100%;
+  max-width: 150px;
   background: var(--display-color3);
   color: var(--text-color1);
-  border-radius: 10px;
-  padding: 8px;
+  border-radius: 5px;
+  padding: 13px;
   cursor: pointer;
-}
-.bottle-box:hover {
-  background: url(assets/imgs/logo.png);
-  transform: scale(107%);
-  border: 1px solid var(--text-color2);
-  border-radius: 1px;
-  transition: 0.4s;
 }
 .brand-bar {
   display: flex;
@@ -182,7 +205,12 @@ button {
   gap: 125px;
   width: 100%;
   height: 40px;
-  background: var(--display-color2);
+  color: var(--text-color1);
+  background: linear-gradient(
+    185deg,
+    var(--gradient-color1),
+    var(--gradient-color2)
+  );
 }
 
 /*styling for the advertisement section*/
@@ -206,7 +234,11 @@ button {
   margin-top: 40px;
   width: 100%;
   height: 350px;
-  background: var(--display-color2);
+  background: linear-gradient(
+    65deg,
+    var(--gradient-color1),
+    var(--gradient-color2)
+  );
 }
 .icons {
   margin: auto;
@@ -234,13 +266,39 @@ hr {
   height: 900px;
   background: var(--display-color1);
 }
+.top-brands {
+  display: flex;
+  justify-content: space-evenly;
+}
+.center {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.bottle-box2 {
+  padding: 30px;
+  margin: 30px;
+  gap: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.bottle-box2 button {
+  margin: auto;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
 .boxes {
   margin-top: 60px;
   margin-bottom: 0px;
   padding-bottom: 20px;
   width: 400px;
   height: 400px;
-  background: var(--display-color2);
+}
+.boxes img {
+  width: 200px;
 }
 .add-cart {
   position: relative;
@@ -267,6 +325,10 @@ hr {
   width: 100%;
   height: 600px;
   background: var(--text-color1);
+}
+.display-section6 p,
+b {
+  color: var(--display-color3);
 }
 .forum-section {
   display: flex;
