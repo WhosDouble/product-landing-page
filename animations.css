@@ -1,3 +1,7 @@
+:root {
+  --chunk-width: 1300px;
+}
+
 .hidden {
   opacity: 0;
   filter: blur(5px);
@@ -9,4 +13,32 @@
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+.brand-bar {
+  animation: marquee 10s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+.sale-bar {
+  animation: marquee 10s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+.chunk {
+  width: var(--chunk-width);
+  display: flex;
+  font-weight: 700;
+  gap: 100px;
+}
+
+@keyframes marquee {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: calc(var(--chunk-width) * -1);
+  }
 }
