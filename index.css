@@ -224,18 +224,21 @@ hr {
   background: var(--text-color1);
 }
 .topbrands-container {
+  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   width: 100%;
-  height: 600px;
+  height: 900px;
   background: var(--display-color3);
 }
 .boxes {
   margin-top: 60px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
   width: 400px;
-  height: 60%;
+  height: 400px;
   background: var(--display-color2);
 }
 .add-cart {
@@ -243,8 +246,54 @@ hr {
   width: 160px;
   background: var(--display-color3);
   color: var(--text-color1);
-  top: 310px;
+  top: 320px;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*styling for the last section*/
+.forum-header {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.display-section6 {
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+  background: var(--text-color1);
+}
+.forum-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  gap: 20px;
+  text-align: left;
+}
+.forum-section a {
+  color: #000;
+}
+.email-bar {
+  margin: auto;
+}
+.email {
+  padding: 10px;
+  width: 100%;
+  max-width: 800px;
+}
+.join {
+  position: relative;
+  border-radius: 3px;
+  border: none;
+  padding: 6px;
+  right: -186px;
+  top: -38px;
+  background: var(--display-color3);
+  cursor: pointer;
 }
