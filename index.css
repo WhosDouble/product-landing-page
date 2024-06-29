@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&display=swap");
 /*color variables*/
 :root {
-  --display-color1: #ff4191;
-  --display-color2: #ff4191;
-  --display-color3: #000000;
-  --text-color1: #fff078;
+  --display-color1: #1a1a1b;
+  --display-color2: #333f44;
+  --display-color3: #37aa9c;
+  --text-color1: #eeeeee;
 }
 /*all selectors*/
 * {
@@ -15,7 +15,7 @@
 }
 
 body {
-  background: #000000;
+  background: var(--display-color1);
   overflow-x: hidden;
 }
 a {
@@ -32,7 +32,7 @@ button {
 /*custom scrollbar*/
 ::-webkit-scrollbar {
   width: 0.5em;
-  background: #000;
+  background: var(--display-color2);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--text-color1);
@@ -40,7 +40,7 @@ button {
   cursor: pointer;
 }
 ::-webkit-scrollbar-track {
-  background: #ff4191;
+  background: var(--display-color2);
 }
 
 .sale-bar {
@@ -48,7 +48,7 @@ button {
   z-index: 10;
   width: 100%;
   height: 35px;
-  background: #e90074;
+  background: var(--display-color3);
   padding-top: 5px;
   text-align: center;
   color: var(--text-color1);
@@ -73,7 +73,7 @@ button {
   height: 13%;
   margin: 13px;
   margin-left: 0;
-  background: #000000;
+  background: var(--display-color1);
   padding: 10px;
   gap: 37px;
   justify-content: flex-start;
@@ -99,6 +99,7 @@ button {
   );
 }
 .display-heading {
+  color: #000;
   display: flex;
   padding: 30px;
   flex-direction: column;
@@ -114,7 +115,7 @@ button {
   margin-left: 10%;
 }
 .head-word {
-  color: var(--text-color1);
+  color: var(--text-color3);
 }
 .shop-button {
   margin-top: 140px;
@@ -154,7 +155,7 @@ button {
   width: 100%;
   height: 350px;
   max-width: 400px;
-  background: var(--display-color1);
+  background: var(--display-color2);
   border-radius: 15px;
   transition: 0.4s;
 }
@@ -170,7 +171,7 @@ button {
 .bottle-box:hover {
   background: url(assets/imgs/logo.png);
   transform: scale(107%);
-  border: 1px solid var(--text-color1);
+  border: 1px solid var(--text-color2);
   border-radius: 1px;
   transition: 0.4s;
 }
@@ -231,7 +232,7 @@ hr {
   justify-content: center;
   width: 100%;
   height: 900px;
-  background: var(--display-color3);
+  background: var(--display-color1);
 }
 .boxes {
   margin-top: 60px;
