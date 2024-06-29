@@ -55,7 +55,6 @@ b {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  gap: 190px;
   position: fixed;
   z-index: 17;
   width: 100%;

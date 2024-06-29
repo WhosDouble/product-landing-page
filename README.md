@@ -11,13 +11,13 @@
     <li>Product Listings: View a variety of products with detailed descriptions and images.</li>
     <li>custom scrollbar and interactive elements</li>
 </ul>
-<img src="assets/read.mdstuff/SS1.png/SS1.png">
+<img src="assets/read.mdstuff/SS1.png" alt="a picture of the website">
 
 <h2>Stuff used🛠</h2>
 <ul>
     <li>HTML</li>
     <li>CSS(flexbox, media queries)</li>
-    <li>JavaScript(soon..)</li>
+    <li>JavaScript</li>
 </ul>
 <h3>new stuff added</h3>
 <ul>
@@ -25,4 +25,11 @@
     <li>added scroll animations</li>
     <li>added img slider</li>
     <li>changed the layout</li>
+    <li>marquee for the header</li>
+    <li>more landing page content</li>
+</ul>
+<img src="assets/videos/new featuresv2.gif" alt="gif of the new features">
+<h3>small contributor's</h3>
+<ul>
+    <li><a href="https://github.com/ronanru">RonanRU</a></li>
 </ul>
