@@ -237,6 +237,25 @@
   }
 }
 
+@media (max-width: 390px) {
+  .display-heading {
+    padding: 0px;
+    text-wrap: balance;
+    margin-left: 5%;
+  }
+  .display-content img {
+    position: absolute;
+    top: 370px;
+    right: 645px;
+    width: min(50vw, 100%);
+    max-width: 700px;
+    min-width: 400px;
+    margin-left: 10%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+  }
+}
+
 @media (max-width: 375px) {
   .display-heading {
     padding: 0px;

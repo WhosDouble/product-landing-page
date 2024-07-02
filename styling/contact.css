@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&display=swap");
+:root {
+  --display-color1: #1a1a1b;
+  --display-color2: #333f44;
+  --display-color3: #37aa9c;
+  --gradient-color1: #333f44;
+  --gradient-color2: #191e20;
+  --sub-text-color: #a1a1a1;
+  --text-color1: #eeeeee;
+}
+
+a {
+  color: var(--text-color1);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  background: linear-gradient(
+    96deg,
+    var(--display-color2),
+    var(--gradient-color2)
+  );
+  font-family: Poppins, sans-serif;
+}
+
+.logo {
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 209px;
+  margin-right: 90px;
+}
+.sale-bar {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  z-index: 17;
+  width: 100%;
+  height: 35px;
+  background: linear-gradient(
+    45deg,
+    var(--display-color3),
+    var(--display-color2)
+  );
+  padding-top: 5px;
+  text-align: center;
+  color: var(--text-color1);
+}
+.sale-bar {
+  animation: marquee 10s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+.chunk {
+  width: var(--chunk-width);
+  display: flex;
+  font-weight: 700;
+  gap: 100px;
+}
+
+@keyframes marquee {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: calc(var(--chunk-width) * -1);
+  }
+}
+.nav-bar {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 16;
+  display: flex;
+  width: 100%;
+  height: 13%;
+  max-height: 140px;
+  min-width: 400px;
+  background: var(--display-color1);
+  color: transparent;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contact-container {
+  position: relative;
+  top: 210px;
+  width: 100%;
+  height: 40%;
+  max-height: 920px;
+  max-width: 440px;
+  min-height: 500px;
+  background: var(--gradient-color2);
+  border-radius: 5px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 50px;
+  margin: auto;
+}
+.forum {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 10px;
+}
+.email-address {
+  width: 370px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--sub-text-color);
+}
+.help {
+  width: 100%;
+  max-width: 385px;
+  min-width: 385px;
+  max-height: 600px;
+  min-height: 100px;
+  border-radius: 5px;
+}
+.send-btn {
+  width: 100%;
+  max-width: 392px;
+  padding: 13px;
+  border-radius: 5px;
+  border: 1px solid;
+  background-color: var(--display-color3);
+  cursor: pointer;
+  color: var(--text-color1);
+}
+
+.touch {
+  letter-spacing: 5px;
+}
+
+.header-text2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--text-color1);
+}
+.para3 {
+  font-size: 17px;
+  color: var(--sub-text-color);
+}
+#color {
+  color: var(--display-color3);
+  cursor: pointer;
+}

@@ -29,6 +29,11 @@
     <li>more landing page content</li>
 </ul>
 <img src="assets/videos/new featuresv2.gif" alt="gif of the new features">
+<hr>
+<h2>Mobile Responsiveness</h2>
+<p>the website is responsive for mobile devices</p>
+<img src="assets/read.mdstuff/SS2.png" alt="">
+<h3>and has its own unique features to make the mobile view a better experience
 <h3>small contributor's</h3>
 <ul>
     <li><a href="https://github.com/ronanru">RonanRU</a></li>
