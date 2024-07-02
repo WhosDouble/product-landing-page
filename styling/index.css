@@ -108,6 +108,9 @@ svg {
 .link {
   transition: 0.7s;
 }
+.active {
+  color: var(--display-color3);
+}
 .link:hover {
   border-bottom: 1px solid var(--text-color1);
   transition: 0.7s;
