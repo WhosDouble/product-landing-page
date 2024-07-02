@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Developed by SirRango" />
-    <title>Exree</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="animations.css">
+    <title>EauLuxe</title>
+    <link rel="stylesheet" href="styling/index.css" />
+    <link rel="stylesheet" href="styling/animations.css" />
+    <link rel="stylesheet" href="styling/media.css" />
     <link rel="icon" href="assets/imgs/logo2.png" />
-    <script defer src="script.js"></script>
-    <script defer src="scroll.js"></script>
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/scroll.js"></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -54,11 +55,65 @@
             alt="the logo"
           />
         </a>
-        <a class="link" href="" class="nav-link">Home</a>
-        <a class="link" href="#display-section5" class="nav-link">Fragrances</a>
-        <a class="link" href="" class="nav-link">Contact</a>
-        <a class="link" href="" class="nav-link">About us</a>
-        <a class="link" href="" class="nav-link">Gifting</a>
+        <div class="nav-background">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            style="fill: rgba(255, 255, 255, 1); transform: ; msfilter: "
+          >
+            <path
+              d="m21.743 12.331-9-10c-.379-.422-1.107-.422-1.486 0l-9 10a.998.998 0 0 0-.17 1.076c.16.361.518.593.913.593h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a.998.998 0 0 0 .743-1.669z"
+            ></path>
+          </svg>
+          <label class="labels" for="fragrances">fragrances</label>
+        </div>
+        <div class="nav-background">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            style="fill: rgba(255, 255, 255, 1); transform: ; msfilter: "
+          >
+            <path
+              d="M21 2H6a2 2 0 0 0-2 2v3H2v2h2v2H2v2h2v2H2v2h2v3a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-8 2.999c1.648 0 3 1.351 3 3A3.012 3.012 0 0 1 13 11c-1.647 0-3-1.353-3-3.001 0-1.649 1.353-3 3-3zM19 18H7v-.75c0-2.219 2.705-4.5 6-4.5s6 2.281 6 4.5V18z"
+            ></path>
+          </svg>
+          <a id="contact" class="link" href="" class="nav-link">Contact</a>
+          <label class="labels" for="contact">Contact</label>
+        </div>
+        <div class="nav-background">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            style="fill: rgba(255, 255, 255, 1); transform: ; msfilter: "
+          >
+            <path
+              d="M12 4C9.243 4 7 6.243 7 9h2c0-1.654 1.346-3 3-3s3 1.346 3 3c0 1.069-.454 1.465-1.481 2.255-.382.294-.813.626-1.226 1.038C10.981 13.604 10.995 14.897 11 15v2h2v-2.009c0-.024.023-.601.707-1.284.32-.32.682-.598 1.031-.867C15.798 12.024 17 11.1 17 9c0-2.757-2.243-5-5-5zm-1 14h2v2h-2z"
+            ></path>
+          </svg>
+          <a id="about-us" class="link" href="" class="nav-link">About Us</a>
+          <label class="labels" for="about-us">About Us</label>
+        </div>
+        <div class="nav-background">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            style="fill: rgba(255, 255, 255, 1); transform: ; msfilter: "
+          >
+            <path
+              d="M13.003 3h2v2h-2zM16 3h2v2h-2zm0 3h2v2h-2zm3-3h2v2h-2zm0 3h2v2h-2zm0 3h2v2h-2zM4.012 12v9a1 1 0 0 0 1 1H13a1 1 0 0 0 1-1v-9a4 4 0 0 0-4-4H8.012a4 4 0 0 0-4 4zM7.003 2h4v4h-4z"
+            ></path>
+          </svg>
+          <a class="link" href="" class="nav-link"></a>
+          <label class="labels" for="fragrances">fragrances</label>
+        </div>
       </nav>
     </header>
     <main>
@@ -69,16 +124,17 @@
             <button class="shop-button">SHOP NOW</button>
           </div>
           <div class="display-content">
-          <img
-            class="changeimg"
-            id="heading-img"
-            loading="lazy"
-            src="assets/imgs/bottle1.png"
-            alt="Fragrance bottles"
-          />
-          <img class="changeimg" src="assets/imgs/bottle2.png" alt="" />
-          <img class="changeimg"  src="assets/imgs/bottle4.png" alt="" />
-          <img class="changeimg"  src="assets/imgs/bottle5.png" alt="" />
+            <img
+              class="changeimg"
+              id="heading-img"
+              loading="lazy"
+              src="assets/imgs/bottle1.png"
+              alt="Fragrance bottles"
+            />
+            <img class="changeimg" src="assets/imgs/bottle2.png" alt="" />
+            <img class="changeimg" src="assets/imgs/bottle4.png" alt="" />
+            <img class="changeimg" src="assets/imgs/bottle5.png" alt="" />
+          </div>
         </div>
       </section>
 
@@ -113,10 +169,18 @@
           </div>
         </div>
         <div class="ad-bio">
-          <h2 class="hidden">Unleash Your Elegance with Our Signature Men's Cologne</h2>
-          <p class="hidden"> Discover the essence of sophistication with our men's cologne. Each fragrance is meticulously crafted </p>
-          <p class="hidden"> to embody elegance and confidence, ensuring you leave a lasting impression wherever you go. Find </p>
-          <p class="hidden"> your perfect scent and redefine your presence. </p>
+          <h2 class="hidden">
+            Unleash Your Elegance with Our Signature Men's Cologne
+          </h2>
+          <p class="hidden">
+            Discover the essence of sophistication with our men's cologne. Each
+            fragrance is meticulously crafted
+          </p>
+          <p class="hidden">
+            to embody elegance and confidence, ensuring you leave a lasting
+            impression wherever you go. Find
+          </p>
+          <p class="hidden">your perfect scent and redefine your presence.</p>
         </div>
       </section>
       <section class="display-section3">
@@ -133,7 +197,7 @@
       </section>
       <section class="display-section4">
         <div class="service-bar">
-          <div class="hidden">
+          <div class="hidden fix">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               display="block"
@@ -153,7 +217,7 @@
             <p>on all orders over 75$</p>
             <p>for all international orders over 200$</p>
           </div>
-          <div class="hidden">
+          <div class="hidden fix">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="44"
@@ -171,7 +235,7 @@
             <p>if you don't like it in 30 days money back</p>
             <p>we honour our iron-clad guarantee</p>
           </div>
-          <div class="hidden">
+          <div class="hidden fix">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="44"
@@ -189,7 +253,7 @@
             <p>Choose a free Travel Size Fragrance</p>
             <p>With every bottle purchased(200$)</p>
           </div>
-          <div class="hidden"></div>
+          <div class="hidden fix"></div>
         </div>
       </section>
       <section class="display-section5">
@@ -198,7 +262,7 @@
         </header>
         <hr />
         <div class="bottle-box2">
-          <div>
+          <div class="fix-phone">
             <img
               id="bottle1"
               class="bottles"
